@@ -1,0 +1,1000 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
+
+body {
+	background: #f4f8fb;
+	font-family: 'Open Sans', sans-serif;
+	padding: 20px;
+	position: relative;
+}
+.content-container {
+	margin-top: 35px;
+}
+
+/* header
+==================================================*/
+header {
+	background: #fff;
+	height: 126px;
+}
+.logo {
+	float: left;
+	padding: 24px 0px;
+}
+.logo img{
+	width:159px;
+	height: 76px;
+}
+header .menu {
+	float: right;
+	margin-top: 20px;
+}
+.login-menu {
+	width:100%;
+	text-align: right;
+}
+.login-menu a {
+	font-size: 14px;
+	color: #666666;
+	display: inline-block;
+} 
+a.signup {
+	padding: 8px;
+	background: #000000;
+	color:#fff;
+	margin-left: 20px;
+}
+header nav {
+	float: right;
+	margin-top: 20px;
+}
+header nav ul li {
+	float: left;
+	margin-left: 35px;
+}
+header nav ul li:first-child {
+	margin-left: 0px;
+} 
+header nav ul li a {
+	font-size:16px;
+	color:#000000;
+	padding-bottom: 32px;
+	font-weight: bold;
+	text-transform: capitalize;	
+}
+header nav ul li a:hover ,header nav ul li a:focus,header nav ul li a:active,header nav ul li a.active{ 
+	border-bottom: 5px solid #0088cc;
+	color:#0088cc;
+}
+input.search_input {
+    background: transparent url(../images/search.png)no-repeat;
+    background-position: right center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0px;
+    transition: all 0.8s ease;
+    text-indent: -999px;
+    right: 10px;
+}
+form#searchform {
+	position: relative;
+	float: right;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+form#searchform input#search{
+  width: 25px;
+  height: 20px;
+  border-radius: 75px;
+  -moz-border-radius: 75px;
+  -webkit-border-radius:75px;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-position: right center;
+  transition: all 0.8s ease;
+  color:#000000;
+  float: right; 
+}
+form#searchform:hover input#search{
+	width: 185px;
+	padding-left: 10px;
+	padding-right:30px;
+	border: 1px solid #cccccc;
+}
+input#search:focus{
+    width: 185px!important;
+    padding-left: 10px!important;
+    padding-right: 30px!important;
+    border-radius: 75px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius:75px;
+	background: transparent;
+	border: 1px solid #cccccc;
+	
+}
+form#searchform input#search.search_open {
+    width: 185px!important;
+    padding-left: 10px!important;
+    padding-right: 30px!important;
+    border-radius: 75px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius:75px;
+	background: transparent;
+	border: 1px solid #cccccc;
+}
+.main-menu {
+	float: right;
+	position: relative;
+}
+.login-menu {
+	float: right;
+}
+.mobile-footer-menu {
+	display: none;
+}
+
+.menu-opend {
+    position: static;
+    overflow: auto;
+}
+.menu-mobile {
+	float: right;
+	margin-top: 50px;
+	display: none;
+	cursor: pointer;
+	width:25px;
+	height: 25px;
+	background: url(../images/menuitem.png) no-repeat center;
+}
+/* slider
+==================================================*/
+.slider-home {
+	height: 450px;
+	overflow: hidden;
+	max-height: 450px;
+}
+.slider-home li img{
+	width: 100%;
+	height: 450px;
+	max-height: 450px;
+}
+.slider-home .lSAction > .lSNext {
+	background: url(../images/next.png) no-repeat;
+	right: 60px;
+}
+.slider-home .lSAction > .lSPrev {
+	background: url(../images/prev.png) no-repeat;
+	left: 60px;
+}
+.slider-home .lSAction > a {
+	width: 24px;
+	height: 44px;
+}
+.descrip-slide a {
+	color: #fff;
+    background: #0088cc;
+    padding: 10px 45px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.descrip-slide li {
+	position: relative;
+}
+.descrip-slide {
+    position: absolute;
+    top: 32%;
+    margin-left: 10%;
+    width: 8%
+}
+.descrip-slide h1{
+	font-weight: 700;
+	color:#0088cc;
+	text-transform: uppercase;
+}
+.descrip-slide h4 {
+	color: #64707e;
+	text-transform: uppercase;
+	font-weight: 700;
+	max-height: 48px;
+	overflow: hidden;
+}
+.slider-home ul.lSPager.lSpg {
+	display: none;
+}
+.slider-home .lSAction > a {
+	z-index: 100;
+}
+/* about museum home
+==================================================*/
+.about-section {
+    padding: 50px 0px 60px 0px;
+}
+.about-section h2 , .latest-museum h2{
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+/* latest museum home
+==================================================*/
+.latest-museum h2 span {
+    font-size: 14px;
+	color: #0088cc;
+    font-weight: bold;
+    float: right;
+}
+.latest-museum h2 span a {
+    color: #0088cc;
+    padding-right: 15px;
+    background: url(../images/more.png)no-repeat right center;
+}
+.latest-museum li {
+	float: left;
+    width: 48%;
+    margin-right: 3%;
+    margin-bottom: 30px;
+}
+.latest-museum li:nth-child(2n) {
+    margin-right: 0px;
+}
+.latest-museum ul li .latest-museum-img {
+	width: 170px;
+	float: left;
+}
+.latest-museum ul li img {
+	width: 170px;
+	height:115px;
+}
+.latest-museum-details {
+	margin-left:200px; 
+}
+.latest-museum-details h3 {
+	margin-bottom: 5px; 
+}
+.latest-museum {
+	background: #fff;
+	padding: 60px 0px 30px 0px;
+	border-bottom: 1px solid #cccccc;
+
+}
+/* #footer
+================================================== */
+footer {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+footer h6 {
+	color:#64707e;
+	margin-top: 10px;
+}
+.left-footer {
+	float: left;
+}
+footer nav ul li {
+	float: left;
+	margin-right: 20px;
+}
+footer nav ul li a{
+	font-size: 16px;
+	color: #64707e;
+
+}
+.social-media {
+	float: right;
+	margin-top: 15px;
+}
+ul.social-links li {
+	float: left;
+	margin-right: 15px;
+}
+ul.social-links li:last-child {
+	margin-right: 0px;
+}
+.social-links li a {
+	width: 20px;
+	height:20px;
+	display: block;
+}
+.social-links li a.fb {
+	background: url(../images/fb.png)no-repeat center;
+}
+.social-links li a.linkedin {
+	background: url(../images/linkedin.png)no-repeat center;
+}
+.social-links li a.tw {
+	background: url(../images/tw.png)no-repeat center;
+}
+.social-links li a.google {
+	background: url(../images/google.png)no-repeat center;
+}
+.social-links li a.fb:hover {
+	background: url(../images/fb-active.png)no-repeat center;
+}
+.social-links li a.linkedin:hover {
+	background: url(../images/linkedin-active.png)no-repeat center;
+}
+.social-links li a.tw:hover {
+	background: url(../images/tw-active.png)no-repeat center;
+}
+.social-links li a.google:hover {
+	background: url(../images/google-active.png)no-repeat center;
+}
+/* #list-page
+================================================== */
+.list-museum-course h1 ,.list-museum-topic h1{
+	margin-bottom: 20px;
+    color: #000000;
+}
+.img-course {
+	float:left;
+	width:170px;
+}
+.img-course img {
+	width:170px;
+	height:115px;
+}
+.description-course {
+	margin-left: 195px;
+}
+.description-course h3 {
+	margin-bottom: 5px;
+	max-height: 39px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-courses li {
+	padding: 30px 70px 30px 30px;
+	background: #fff;
+	overflow: hidden;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #cccccc;
+}
+.list-courses li:last-child {
+	margin-bottom: 0px;
+}
+.list-trend h3 {
+	margin-bottom: 15px;
+    color: #000000;
+    margin-top: 10px;
+}
+ul.trending-courses li {
+	padding: 10px;
+	background: #fff;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+ul.trending-courses li:last-child {
+	margin-bottom: 0px;
+}
+.img-trend-course {
+	float: left;
+	width:70px;
+}
+.img-trend-course img{
+	width:70px;
+	height: 50px;
+}
+.description-trend-course {
+	margin-left: 90px;
+}
+.description-trend-course span.number-enrolled {
+	font-size: 12px;
+	color:#64707e;
+	padding-left: 19px;
+	background: url(../images/person-enrolled.png) no-repeat left center;
+	margin-top: 5px;
+}
+.description-trend-course h4 {
+	margin-bottom: 5px;
+	color: #000000;
+	text-transform: capitalize;
+	text-overflow: ellipsis;
+    height: 24px;
+    overflow: hidden;
+}
+.adv {
+	height:282px;
+	margin-top: 30px;
+}
+.adv img{
+	width: 100%;
+}
+.load-more {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    height: 20px;
+    cursor: pointer;
+    background: url(../images/loadicon.png) center center no-repeat;
+}
+/* #item-page
+================================================== */
+ul.slide-main-activity {
+	max-height:366px;
+	overflow: hidden;
+}
+.main-activity .lSSlideOuter .lSPager.lSpg ,.second-slider-activity .lSSlideOuter .lSPager.lSpg{
+	display: none!important;
+}
+.main-activity .lSAction > .lSNext {
+	background: url(../images/next-slide-main-activity.png) no-repeat;
+	right: 30px;
+}
+.main-activity .lSAction > .lSPrev {
+	background: url(../images/prev-slide-maic-activity.png) no-repeat;
+	left: 30px;
+}
+.main-activity .lSAction > a {
+	width: 22px;
+	height: 40px;
+}
+.slide-main-activity li img {
+	width: 100%;
+}
+.description-main-activity, .map-activity,.second-slider-activity,.descripe-widget-image,.descripe-widget-youtube,.widget-text,.widget-qr-activity,.widget-options-activity {
+	padding: 30px;
+	border-bottom: 1px solid #cccccc;
+	background: #fff;
+}
+.description-main-activity {
+	padding-top: 25px;
+}
+.topic {
+	margin-bottom: 30px;
+}
+.topic h3 {
+	color: #000000;
+	margin-bottom: 10px;
+}
+.description-map-activity {
+	width: 340px;
+    float: left;
+    margin-right: 30px;
+}  
+.map {
+	width:340px;
+	height: 200px;
+	float: right;
+} 
+.second-slider-descrip p {
+	margin-bottom: 15px;
+}
+.second-slider-activity .lSAction > .lSNext {
+	background: url(../images/next-slide.png) no-repeat;
+	right: 15px;
+}
+.second-slider-activity .lSAction > .lSPrev {
+	background: url(../images/prev-slide.png) no-repeat;
+	left: 15px;
+}
+.second-slider-activity .lSAction > a {
+	width: 16px;
+	height: 30px;
+}
+.second-slider-activity  ul li img {
+	width: 100%;
+}
+.widget-text ul li{
+	float: left;
+	margin-right: 5%;
+	width:47%;
+}
+.widget-text ul li:nth-child(2n){
+	margin-right: 0px;
+}
+.widget-image ,.video-widget{
+	height: 375px;
+	overflow: hidden;
+}
+.widget-image-activity ,.widget-youtube-activity{
+	background: #fff;
+	padding-top: 30px;
+}
+.widget-image-activity h3 ,.widget-youtube-activity h3{
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+.widget-image-activity img {
+	width: 100%;
+}
+.qr-widget {
+	width: 185px;
+	height:185px;
+	overflow: hidden;
+	float: left;
+}
+.descripe-widget-qr {
+	margin-left:215px; 
+}
+.widget-options-activity p {
+	margin-bottom: 30px;
+}
+.options {
+	padding:20px;
+	background:#f4f8fb;
+}
+.options h6 {
+	color: #000000;
+	margin-bottom: 20px;
+}
+.radio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    color: #64707e;
+    font-weight: 400;
+}
+.radio .option {
+	margin-bottom: 10px;
+}
+a.next-option {
+	background: #000000;
+	color: #fff;
+	padding: 10px 30px;
+	display: inline-block;
+	margin-top: 10px;
+}
+/* #Media Queries
+================================================== */
+
+	@media only screen and (min-width: 959px) and (max-width:1235px) {
+		.container {	
+			width: 920px;
+		}
+		.container .twelve.columns {
+		    width: 900px;
+		}
+		.slider-home {
+			height: auto;
+
+		}
+		.slider-home li img {
+			height: auto;
+			
+		}
+		.descrip-slide h1 {
+			font-size: 32px;
+		}
+		.descrip-slide h4 {
+			font-size: 16px;
+			max-height: 72px;
+			overflow: hidden;
+		}
+		.descrip-slide a {
+			margin-top: 10px;
+		}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.menu-opend {
+		    position: absolute;
+		    width: 100%;
+		}
+		.slider-home {
+			height: auto;
+
+		}
+		.slider-home li img {
+			height: auto;
+			
+		}
+		.container .four.columns {
+		    width: 748px;
+		}
+		.container .eight.columns {
+		    width: 748px;
+		}
+		.treding {
+			width:56%;
+			margin-right: 2%;
+			float: left;
+		}
+		.adv {
+		    margin-left: 58%;
+		}
+		header .menu{
+		    position: fixed;
+		    top: 0;
+		    border: none;
+		    padding: 0;
+		    right: -260px;
+		    height: 100%;
+		    overflow: auto;
+		    background: #f4f8fb;
+		    width: 260px;
+		    z-index: 101;
+		    margin-top: 0px;
+		    overflow-x:hidden;
+		}
+		.menu-mobile {
+			display: block;
+		}
+		form#searchform input#search{
+		    width: 185px!important;
+		    padding-left: 10px!important;
+		    padding-right: 30px!important;
+		    border-radius: 75px;
+		    -moz-border-radius: 75px;
+		    -webkit-border-radius: 75px;
+		    background: transparent;
+		    border: 1px solid #cccccc;
+		    display: block!important;
+		    float: none;
+		    margin-left: 10px;
+		}
+		form#searchform {
+		    position: absolute;
+		    top: -150px;
+		}
+		.login-menu {
+			margin-top: 65px;
+			padding-bottom: 10px;
+		    border-bottom: 1px solid #cccccc;
+		    margin-bottom: 10px;
+		    margin-left: 10px;
+		}
+		input.search_input {
+			right: 10px;
+		}
+		header nav ul li {
+			margin-left: 0px;
+		}
+		header nav ul li ,.main-menu ,.login-menu{
+			float: none;
+		}
+		header nav {
+		    float: none;
+		    margin-top: 0px;
+		    margin-left: 10px;
+		}
+		header nav ul li a { 
+			display: block;
+			padding: 10px;
+		}
+		.mobile-footer-menu .left-footer,.mobile-footer-menu .social-media {
+			float: none;
+		}
+		header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active, header nav ul li a:visited, header nav ul li a.active {
+			border-bottom: none;
+		}
+		form#searchform {
+			float: none;
+			margin-left: 0px;
+		}
+		.social-links {
+			overflow: hidden;
+		}
+		.social-media {
+			margin-left: 10px;
+		}
+		a.signup {
+			padding: 0px;
+			background: none;
+			margin-left: 0px;
+			color:#000000;
+		}
+		.login-menu a {
+		    display: block;
+		    text-align: left;
+		    padding: 10px;	
+		    color:#0088cc;
+		    font-weight: 600;
+		    font-size: 16px;
+		}
+		header nav ul li a { 
+		    color:#0088cc;
+
+		}
+		.descrip-slide {
+			top: 12%;
+		}
+		.descrip-slide h1 {
+			font-size: 32px;
+		}
+		.descrip-slide h4 {
+			font-size: 16px;
+			max-height: 72px;
+			overflow: hidden;
+		}
+		.descrip-slide a {
+			margin-top: 10px;
+		}
+		.slider-home .lSAction > .lSPrev {
+			left: 10px;
+		}
+		.slider-home .lSAction > .lSNext{
+			right: 10px;
+		}
+		.latest-museum li {
+			float: none;
+			width: auto;
+		}
+		.description-map-activity {
+		    width: 315px;
+		}
+
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.menu-opend {
+		    position: absolute;
+		    width: 100%;
+		}
+
+		body {
+			padding: 0px;
+		}
+		.slider-home {
+			height: 150px;
+
+		}
+		.slider-home li img {
+			height: 150px;
+			
+		}
+		header .menu{
+		    position: fixed;
+		    top: 0;
+		    border: none;
+		    padding: 0;
+		    right: -260px;
+		    height: 100%;
+		    overflow: auto;
+		    background: #f4f8fb;
+		    width: 260px;
+		    z-index: 101;
+		    margin-top: 0px;
+		    overflow-x: hidden;
+		}
+		.menu-mobile {
+			display: block;
+		}
+		.mobile-footer-menu {
+		    display: block;
+		}
+		form#searchform input#search{
+		    width: 185px!important;
+		    padding-left: 10px!important;
+		    padding-right: 30px!important;
+		    border-radius: 75px;
+		    -moz-border-radius: 75px;
+		    -webkit-border-radius: 75px;
+		    background: transparent;
+		    border: 1px solid #cccccc;
+		    display: block!important;
+		    float: none;
+		    margin-left: 10px;
+		}
+		form#searchform {
+		    position: absolute;
+		    top: -150px;
+		}
+		.login-menu {
+			margin-top: 65px;
+			padding-bottom: 10px;
+		    border-bottom: 1px solid #cccccc;
+		    margin-bottom: 10px;
+		    margin-left: 10px;
+		}
+		input.search_input {
+			right: 10px;
+		}
+		header nav ul li {
+			margin-left: 0px;
+		}
+		header nav ul li ,.main-menu ,.login-menu{
+			float: none;
+		}
+		header nav {
+		    float: none;
+		    margin-top: 0px;
+		    margin-left: 10px;
+		    padding-bottom: 10px;
+		    border-bottom: 1px solid #cccccc;
+		    margin-bottom: 10px;
+		}
+		header nav ul li a { 
+			display: block;
+			padding: 10px;
+			color:#0088cc;
+		}
+		.mobile-footer-menu .left-footer,.mobile-footer-menu .social-media {
+			float: none;
+		}
+		header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active, header nav ul li a:visited, header nav ul li a.active {
+			border-bottom: none;
+		}
+		form#searchform {
+			float: none;
+			margin-left: 0px;
+		}
+		.social-links {
+			overflow: hidden;
+		}
+		.social-media {
+			margin-left: 10px;
+			margin-bottom: 10px;
+		}
+		a.signup {
+			padding: 0px;
+			background: none;
+			margin-left: 0px;
+		}
+		.login-menu a {
+		    display: block;
+		    text-align: left;
+		    padding: 10px;
+		    color:#0088cc;
+		    font-weight: 600;
+		    font-size: 16px;
+		}
+		.descrip-slide {
+			top: 12%;
+		}
+		.descrip-slide h1 {
+			font-size: 17px;
+    		line-height: 23px;
+		}
+		.descrip-slide h4 {
+		    font-size: 12px;
+		    max-height: 54px;
+		    line-height: 18px;
+		    font-weight: normal;
+		}
+		.descrip-slide a {
+			margin-top: 8px;
+    		padding: 5px 35px;
+		}  
+		.slider-home .lSAction > .lSPrev {
+			left: 10px;
+		}
+		.slider-home .lSAction > .lSNext{
+			right: 10px;
+		}
+		.latest-museum li {
+			float: none;
+			width: auto;
+		}
+		.latest-museum ul li .latest-museum-img {
+			text-align: center;
+			float: none;
+			width: auto;
+		}
+		.latest-museum-details {
+			margin-left: 0px;
+			text-align: center;
+		}
+		.img-course {
+			float: none;
+			width: auto;
+			text-align: center;
+		}
+		.description-course {
+			margin-left: 0px;
+			text-align: center;
+		}
+		.map {
+			float: none;
+			margin-top: 20px;
+			width: auto;
+		}
+		.description-map-activity {
+			float: none;
+			margin-right: 0px;
+			width: auto;
+		}
+		.widget-image, .video-widget {
+			height: auto;
+			max-height: 375px;
+		}
+		.qr-widget {
+			float: none;
+		    text-align: center;
+		    margin: 0 auto;
+		}
+		.descripe-widget-qr {
+			margin-left: 0px;
+			margin-top: 20px;
+			text-align: center;
+		}
+		.widget-text ul li {
+		    float: none;
+		    margin-right: 0px;
+		    width: auto;
+		    margin-bottom: 20px;
+		}
+		.list-courses li {
+		    padding: 30px;
+		}
+		footer nav {
+			display: none;
+		}
+		footer .social-media {
+			display: none;
+		}
+		footer .left-footer {
+			float: none;
+		}
+		footer h6 {
+		    text-align: center;
+		    margin-top: 0px;
+		}
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.latest-museum h2 span {
+			float:right;
+		}
+		.descrip-slide h1 {
+		    font-size: 19px;
+		}
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		h1 {
+			font-size:36px;
+		}
+		h2 {
+			font-size: 28px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		.descrip-slide h1 {
+			font-size: 13px;
+		}
+		.descrip-slide h4 {
+		    font-size: 10px;
+		    max-height: 45px;
+		    line-height: 15px;
+		    font-weight: normal;
+		}
+		.descrip-slide a {
+		    margin-top: 8px;
+		    padding: 5px 30px;
+		}
+		.descrip-slide {
+		    top: 11%;
+		}
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../images/audio/../fonts/FontName.eot');
+	    src: url('../images/audio/../fonts/FontName.eot?iefix') format('eot'),
+	         url('../images/audio/../fonts/FontName.woff') format('woff'),
+	         url('../images/audio/../fonts/FontName.ttf') format('truetype'),
+	         url('../images/audio/../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
